@@ -1,0 +1,4 @@
+Log file created at: 2015/02/17 16:14:22
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0217 16:14:22.220607  6021 io.cpp:178] Check failed: status >= 0 (-1 vs. 0) Failed to make float dataset data

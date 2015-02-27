@@ -1,0 +1,6 @@
+/scratch/stephenchen/shapes/singleNet/hdf5/test_batch_35x35/testHDF_1_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/test_batch_35x35/testHDF_2_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/test_batch_35x35/testHDF_3_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/test_batch_35x35/testHDF_4_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/test_batch_35x35/testHDF_5_35x35.h5
+

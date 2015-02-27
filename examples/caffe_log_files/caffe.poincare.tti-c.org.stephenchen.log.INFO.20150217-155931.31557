@@ -1,0 +1,302 @@
+Log file created at: 2015/02/17 15:59:31
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0217 15:59:31.604781 31557 caffe.cpp:134] Use GPU with device ID 0
+I0217 15:59:31.869027 31557 net.cpp:39] Initializing net from parameters: 
+name: "LogisticRegressionNet"
+layers {
+  top: "data"
+  top: "label"
+  top: "sample_weight"
+  name: "data"
+  type: HDF5_DATA
+  hdf5_data_param {
+    source: "/share/project/shapes/caffe-weighted-samples/examples/singleNet/testFileList.txt"
+    batch_size: 10
+  }
+}
+layers {
+  bottom: "data"
+  top: "conv1"
+  name: "conv1"
+  type: CONVOLUTION
+  blobs_lr: 1
+  blobs_lr: 2
+  convolution_param {
+    num_output: 96
+    kernel_size: 4
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "conv1"
+  top: "conv1"
+  name: "relu_conv1"
+  type: RELU
+}
+layers {
+  bottom: "conv1"
+  top: "pool1"
+  name: "pool1"
+  type: POOLING
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layers {
+  bottom: "pool1"
+  top: "conv2"
+  name: "conv2"
+  type: CONVOLUTION
+  blobs_lr: 1
+  blobs_lr: 2
+  convolution_param {
+    num_output: 256
+    kernel_size: 3
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "conv2"
+  top: "conv2"
+  name: "relu_conv2"
+  type: RELU
+}
+layers {
+  bottom: "conv2"
+  top: "pool2"
+  name: "pool2"
+  type: POOLING
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layers {
+  bottom: "pool2"
+  top: "conv3"
+  name: "conv3"
+  type: CONVOLUTION
+  blobs_lr: 1
+  blobs_lr: 2
+  convolution_param {
+    num_output: 64
+    kernel_size: 4
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "conv3"
+  top: "conv3"
+  name: "relu_conv3"
+  type: RELU
+}
+layers {
+  bottom: "conv3"
+  top: "ip1"
+  name: "ip1"
+  type: INNER_PRODUCT
+  blobs_lr: 1
+  blobs_lr: 2
+  inner_product_param {
+    num_output: 256
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "ip1"
+  top: "ip1"
+  name: "relu1"
+  type: RELU
+}
+layers {
+  bottom: "ip1"
+  top: "ip2"
+  name: "ip2"
+  type: INNER_PRODUCT
+  blobs_lr: 1
+  blobs_lr: 2
+  inner_product_param {
+    num_output: 256
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "ip2"
+  top: "ip2"
+  name: "relu2"
+  type: RELU
+}
+layers {
+  bottom: "ip2"
+  top: "ip3"
+  name: "ip3"
+  type: INNER_PRODUCT
+  blobs_lr: 1
+  blobs_lr: 2
+  inner_product_param {
+    num_output: 2
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "ip3"
+  bottom: "label"
+  name: "hdf5out"
+  type: HDF5_OUTPUT
+  hdf5_output_param {
+    file_name: "/share/project/shapes/caffe-weighted-samples/examples/singleNet/output/output_data_v0.3.h5"
+  }
+}
+I0217 15:59:31.869262 31557 net.cpp:67] Creating Layer data
+I0217 15:59:31.869276 31557 net.cpp:356] data -> data
+I0217 15:59:31.869298 31557 net.cpp:356] data -> label
+I0217 15:59:31.869323 31557 net.cpp:356] data -> sample_weight
+I0217 15:59:31.869335 31557 net.cpp:96] Setting up data
+I0217 15:59:31.869343 31557 hdf5_data_layer.cpp:63] Loading filename from /share/project/shapes/caffe-weighted-samples/examples/singleNet/testFileList.txt
+I0217 15:59:31.870172 31557 hdf5_data_layer.cpp:75] Number of files: 4
+I0217 15:59:31.870189 31557 hdf5_data_layer.cpp:29] Loading HDF5 file/scratch/stephenchen/shapes/singleNet/hdf5/test_batch_35x35/testHDF_1_35x35.h5
+I0217 15:59:32.717190 31557 hdf5_data_layer.cpp:55] Successully loaded 112600 rows
+I0217 15:59:32.717221 31557 hdf5_data_layer.cpp:89] output data size: 10,4,35,35
+I0217 15:59:32.717273 31557 net.cpp:103] Top shape: 10 4 35 35 (49000)
+I0217 15:59:32.717280 31557 net.cpp:103] Top shape: 10 1 1 1 (10)
+I0217 15:59:32.717285 31557 net.cpp:103] Top shape: 10 1 1 1 (10)
+I0217 15:59:32.717301 31557 net.cpp:67] Creating Layer conv1
+I0217 15:59:32.717308 31557 net.cpp:394] conv1 <- data
+I0217 15:59:32.717329 31557 net.cpp:356] conv1 -> conv1
+I0217 15:59:32.717341 31557 net.cpp:96] Setting up conv1
+I0217 15:59:32.718013 31557 net.cpp:103] Top shape: 10 96 32 32 (983040)
+I0217 15:59:32.718073 31557 net.cpp:67] Creating Layer relu_conv1
+I0217 15:59:32.718081 31557 net.cpp:394] relu_conv1 <- conv1
+I0217 15:59:32.718088 31557 net.cpp:345] relu_conv1 -> conv1 (in-place)
+I0217 15:59:32.718096 31557 net.cpp:96] Setting up relu_conv1
+I0217 15:59:32.718101 31557 net.cpp:103] Top shape: 10 96 32 32 (983040)
+I0217 15:59:32.718107 31557 net.cpp:67] Creating Layer pool1
+I0217 15:59:32.718112 31557 net.cpp:394] pool1 <- conv1
+I0217 15:59:32.718118 31557 net.cpp:356] pool1 -> pool1
+I0217 15:59:32.718127 31557 net.cpp:96] Setting up pool1
+I0217 15:59:32.718147 31557 net.cpp:103] Top shape: 10 96 16 16 (245760)
+I0217 15:59:32.718157 31557 net.cpp:67] Creating Layer conv2
+I0217 15:59:32.718160 31557 net.cpp:394] conv2 <- pool1
+I0217 15:59:32.718168 31557 net.cpp:356] conv2 -> conv2
+I0217 15:59:32.718175 31557 net.cpp:96] Setting up conv2
+I0217 15:59:32.720592 31557 net.cpp:103] Top shape: 10 256 14 14 (501760)
+I0217 15:59:32.720608 31557 net.cpp:67] Creating Layer relu_conv2
+I0217 15:59:32.720614 31557 net.cpp:394] relu_conv2 <- conv2
+I0217 15:59:32.720620 31557 net.cpp:345] relu_conv2 -> conv2 (in-place)
+I0217 15:59:32.720628 31557 net.cpp:96] Setting up relu_conv2
+I0217 15:59:32.720633 31557 net.cpp:103] Top shape: 10 256 14 14 (501760)
+I0217 15:59:32.720638 31557 net.cpp:67] Creating Layer pool2
+I0217 15:59:32.720643 31557 net.cpp:394] pool2 <- conv2
+I0217 15:59:32.720649 31557 net.cpp:356] pool2 -> pool2
+I0217 15:59:32.720656 31557 net.cpp:96] Setting up pool2
+I0217 15:59:32.720662 31557 net.cpp:103] Top shape: 10 256 7 7 (125440)
+I0217 15:59:32.720669 31557 net.cpp:67] Creating Layer conv3
+I0217 15:59:32.720674 31557 net.cpp:394] conv3 <- pool2
+I0217 15:59:32.720680 31557 net.cpp:356] conv3 -> conv3
+I0217 15:59:32.720687 31557 net.cpp:96] Setting up conv3
+I0217 15:59:32.723623 31557 net.cpp:103] Top shape: 10 64 4 4 (10240)
+I0217 15:59:32.723642 31557 net.cpp:67] Creating Layer relu_conv3
+I0217 15:59:32.723649 31557 net.cpp:394] relu_conv3 <- conv3
+I0217 15:59:32.723654 31557 net.cpp:345] relu_conv3 -> conv3 (in-place)
+I0217 15:59:32.723661 31557 net.cpp:96] Setting up relu_conv3
+I0217 15:59:32.723666 31557 net.cpp:103] Top shape: 10 64 4 4 (10240)
+I0217 15:59:32.723673 31557 net.cpp:67] Creating Layer ip1
+I0217 15:59:32.723678 31557 net.cpp:394] ip1 <- conv3
+I0217 15:59:32.723685 31557 net.cpp:356] ip1 -> ip1
+I0217 15:59:32.723693 31557 net.cpp:96] Setting up ip1
+I0217 15:59:32.726547 31557 net.cpp:103] Top shape: 10 256 1 1 (2560)
+I0217 15:59:32.726562 31557 net.cpp:67] Creating Layer relu1
+I0217 15:59:32.726568 31557 net.cpp:394] relu1 <- ip1
+I0217 15:59:32.726574 31557 net.cpp:345] relu1 -> ip1 (in-place)
+I0217 15:59:32.726582 31557 net.cpp:96] Setting up relu1
+I0217 15:59:32.726586 31557 net.cpp:103] Top shape: 10 256 1 1 (2560)
+I0217 15:59:32.726593 31557 net.cpp:67] Creating Layer ip2
+I0217 15:59:32.726598 31557 net.cpp:394] ip2 <- ip1
+I0217 15:59:32.726604 31557 net.cpp:356] ip2 -> ip2
+I0217 15:59:32.726611 31557 net.cpp:96] Setting up ip2
+I0217 15:59:32.727277 31557 net.cpp:103] Top shape: 10 256 1 1 (2560)
+I0217 15:59:32.727293 31557 net.cpp:67] Creating Layer relu2
+I0217 15:59:32.727299 31557 net.cpp:394] relu2 <- ip2
+I0217 15:59:32.727305 31557 net.cpp:345] relu2 -> ip2 (in-place)
+I0217 15:59:32.727313 31557 net.cpp:96] Setting up relu2
+I0217 15:59:32.727318 31557 net.cpp:103] Top shape: 10 256 1 1 (2560)
+I0217 15:59:32.727324 31557 net.cpp:67] Creating Layer ip3
+I0217 15:59:32.727329 31557 net.cpp:394] ip3 <- ip2
+I0217 15:59:32.727334 31557 net.cpp:356] ip3 -> ip3
+I0217 15:59:32.727341 31557 net.cpp:96] Setting up ip3
+I0217 15:59:32.727355 31557 net.cpp:103] Top shape: 10 2 1 1 (20)
+I0217 15:59:32.729475 31557 net.cpp:67] Creating Layer hdf5out
+I0217 15:59:32.729487 31557 net.cpp:394] hdf5out <- ip3
+I0217 15:59:32.729495 31557 net.cpp:394] hdf5out <- label
+I0217 15:59:32.729501 31557 net.cpp:96] Setting up hdf5out
+I0217 15:59:32.729506 31557 net.cpp:172] hdf5out does not need backward computation.
+I0217 15:59:32.729511 31557 net.cpp:172] ip3 does not need backward computation.
+I0217 15:59:32.729518 31557 net.cpp:172] relu2 does not need backward computation.
+I0217 15:59:32.729522 31557 net.cpp:172] ip2 does not need backward computation.
+I0217 15:59:32.729526 31557 net.cpp:172] relu1 does not need backward computation.
+I0217 15:59:32.729532 31557 net.cpp:172] ip1 does not need backward computation.
+I0217 15:59:32.729535 31557 net.cpp:172] relu_conv3 does not need backward computation.
+I0217 15:59:32.729539 31557 net.cpp:172] conv3 does not need backward computation.
+I0217 15:59:32.729544 31557 net.cpp:172] pool2 does not need backward computation.
+I0217 15:59:32.729548 31557 net.cpp:172] relu_conv2 does not need backward computation.
+I0217 15:59:32.729553 31557 net.cpp:172] conv2 does not need backward computation.
+I0217 15:59:32.729557 31557 net.cpp:172] pool1 does not need backward computation.
+I0217 15:59:32.729562 31557 net.cpp:172] relu_conv1 does not need backward computation.
+I0217 15:59:32.729567 31557 net.cpp:172] conv1 does not need backward computation.
+I0217 15:59:32.729570 31557 net.cpp:172] data does not need backward computation.
+I0217 15:59:32.729575 31557 net.cpp:208] This network produces output sample_weight
+I0217 15:59:32.729588 31557 net.cpp:467] Collecting Learning Rate and Weight Decay.
+I0217 15:59:32.729594 31557 net.cpp:219] Network initialization done.
+I0217 15:59:32.729599 31557 net.cpp:220] Memory required for data: 13682240
+I0217 15:59:32.735443 31557 caffe.cpp:145] Running for 450400 iterations.
+I0217 15:59:33.112773 31557 hdf5_output_layer.cpp:33] Saving HDF5 file/share/project/shapes/caffe-weighted-samples/examples/singleNet/output/output_data_v0.3.h5
+I0217 15:59:33.113005 31557 hdf5_output_layer.cpp:38] Successfully saved 10 rows
+I0217 15:59:33.113035 31557 caffe.cpp:169] Batch 0, sample_weight = 0.00559606
+I0217 15:59:33.113097 31557 caffe.cpp:169] Batch 0, sample_weight = 1
+I0217 15:59:33.113104 31557 caffe.cpp:169] Batch 0, sample_weight = 1
+I0217 15:59:33.113111 31557 caffe.cpp:169] Batch 0, sample_weight = 1
+I0217 15:59:33.113116 31557 caffe.cpp:169] Batch 0, sample_weight = 1
+I0217 15:59:33.113122 31557 caffe.cpp:169] Batch 0, sample_weight = 0.00559606
+I0217 15:59:33.113128 31557 caffe.cpp:169] Batch 0, sample_weight = 0.00559606
+I0217 15:59:33.113134 31557 caffe.cpp:169] Batch 0, sample_weight = 1
+I0217 15:59:33.113139 31557 caffe.cpp:169] Batch 0, sample_weight = 1
+I0217 15:59:33.113145 31557 caffe.cpp:169] Batch 0, sample_weight = 0.00559606
+I0217 15:59:33.117658 31557 hdf5_output_layer.cpp:33] Saving HDF5 file/share/project/shapes/caffe-weighted-samples/examples/singleNet/output/output_data_v0.3.h5
+F0217 15:59:33.117821 31557 io.cpp:178] Check failed: status >= 0 (-1 vs. 0) Failed to make float dataset data

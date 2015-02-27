@@ -1,0 +1,4 @@
+Log file created at: 2015/02/17 16:12:20
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0217 16:12:20.654178  5904 layer.hpp:362] Check failed: ExactNumTopBlobs() == top.size() (3 vs. 2) HDF5_DATA Layer produces 3 top blob(s) as output.

@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTryCompileExec3457638453/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3457638453.dir/build.make CMakeFiles/cmTryCompileExec3457638453.dir/build
+gmake[1]: Entering directory `/share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3457638453.dir/CheckSymbolExists.c.o
+/scratch/stephenchen/gcc474/bin/gcc    -o CMakeFiles/cmTryCompileExec3457638453.dir/CheckSymbolExists.c.o   -c /share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3457638453
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3457638453.dir/link.txt --verbose=1
+/scratch/stephenchen/gcc474/bin/gcc       CMakeFiles/cmTryCompileExec3457638453.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3457638453 -rdynamic 
+CMakeFiles/cmTryCompileExec3457638453.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec3457638453] Error 1
+gmake[1]: Leaving directory `/share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec3457638453/fast] Error 2
+
+File /share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTryCompileExec2240758080/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2240758080.dir/build.make CMakeFiles/cmTryCompileExec2240758080.dir/build
+gmake[1]: Entering directory `/share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2240758080.dir/CheckFunctionExists.c.o
+/scratch/stephenchen/gcc474/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2240758080.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2240758080
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2240758080.dir/link.txt --verbose=1
+/scratch/stephenchen/gcc474/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2240758080.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2240758080 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTryCompileExec2240758080] Error 1
+gmake[1]: Leaving directory `/share/project/shapes/caffe-weighted-samples/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec2240758080/fast] Error 2
+
+

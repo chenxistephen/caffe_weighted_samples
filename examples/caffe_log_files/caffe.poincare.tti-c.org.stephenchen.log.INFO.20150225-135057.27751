@@ -1,0 +1,228 @@
+Log file created at: 2015/02/25 13:50:57
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0225 13:50:57.391384 27751 caffe.cpp:99] Use GPU with device ID 0
+I0225 13:50:58.583636 27751 caffe.cpp:107] Starting Optimization
+I0225 13:50:58.583824 27751 solver.cpp:32] Initializing solver from parameters: 
+test_iter: 1000
+test_interval: 1000
+base_lr: 0.005
+display: 100
+max_iter: 500000
+lr_policy: "step"
+gamma: 0.1
+momentum: 0.9
+weight_decay: 0.0005
+stepsize: 5000
+snapshot: 5000
+snapshot_prefix: "examples/singleNet/data/train"
+solver_mode: GPU
+net: "examples/singleNet/train_val_v0.3.prototxt"
+I0225 13:50:58.583906 27751 solver.cpp:67] Creating training net from net file: examples/singleNet/train_val_v0.3.prototxt
+I0225 13:50:58.675554 27751 net.cpp:275] The NetState phase (0) differed from the phase (1) specified by a rule in layer data
+I0225 13:50:58.675590 27751 net.cpp:275] The NetState phase (0) differed from the phase (1) specified by a rule in layer accuracy
+I0225 13:50:58.675741 27751 net.cpp:39] Initializing net from parameters: 
+name: "LogisticRegressionNet"
+layers {
+  top: "data"
+  top: "label"
+  top: "sample_weight"
+  name: "data"
+  type: HDF5_DATA
+  hdf5_data_param {
+    source: "/share/project/shapes/caffe-weighted-samples/examples/singleNet/trainFileList.txt"
+    batch_size: 100
+  }
+  include {
+    phase: TRAIN
+  }
+}
+layers {
+  bottom: "data"
+  top: "conv1"
+  name: "conv1"
+  type: CONVOLUTION
+  blobs_lr: 1
+  blobs_lr: 2
+  convolution_param {
+    num_output: 96
+    kernel_size: 4
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "conv1"
+  top: "conv1"
+  name: "relu_conv1"
+  type: RELU
+}
+layers {
+  bottom: "conv1"
+  top: "pool1"
+  name: "pool1"
+  type: POOLING
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layers {
+  bottom: "pool1"
+  top: "conv2"
+  name: "conv2"
+  type: CONVOLUTION
+  blobs_lr: 1
+  blobs_lr: 2
+  convolution_param {
+    num_output: 256
+    kernel_size: 3
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "conv2"
+  top: "conv2"
+  name: "relu_conv2"
+  type: RELU
+}
+layers {
+  bottom: "conv2"
+  top: "pool2"
+  name: "pool2"
+  type: POOLING
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layers {
+  bottom: "pool2"
+  top: "conv3"
+  name: "conv3"
+  type: CONVOLUTION
+  blobs_lr: 1
+  blobs_lr: 2
+  convolution_param {
+    num_output: 64
+    kernel_size: 4
+    stride: 1
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "conv3"
+  top: "conv3"
+  name: "relu_conv3"
+  type: RELU
+}
+layers {
+  bottom: "conv3"
+  top: "ip1"
+  name: "ip1"
+  type: INNER_PRODUCT
+  blobs_lr: 1
+  blobs_lr: 2
+  inner_product_param {
+    num_output: 256
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "ip1"
+  top: "ip1"
+  name: "relu1"
+  type: RELU
+}
+layers {
+  bottom: "ip1"
+  top: "ip2"
+  name: "ip2"
+  type: INNER_PRODUCT
+  blobs_lr: 1
+  blobs_lr: 2
+  inner_product_param {
+    num_output: 256
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "ip2"
+  top: "ip2"
+  name: "relu2"
+  type: RELU
+}
+layers {
+  bottom: "ip2"
+  top: "ip3"
+  name: "ip3"
+  type: INNER_PRODUCT
+  blobs_lr: 1
+  blobs_lr: 2
+  inner_product_param {
+    num_output: 2
+    weight_filler {
+      type: "xavier"
+    }
+    bias_filler {
+      type: "constant"
+    }
+  }
+}
+layers {
+  bottom: "ip3"
+  bottom: "label"
+  bottom: "sample_weight"
+  top: "loss"
+  name: "loss"
+  type: SOFTMAX_LOSS
+}
+state {
+  phase: TRAIN
+}
+I0225 13:50:58.675900 27751 net.cpp:67] Creating Layer data
+I0225 13:50:58.675911 27751 net.cpp:356] data -> data
+I0225 13:50:58.675936 27751 net.cpp:356] data -> label
+I0225 13:50:58.675953 27751 net.cpp:356] data -> sample_weight
+I0225 13:50:58.675961 27751 net.cpp:96] Setting up data
+I0225 13:50:58.675968 27751 hdf5_data_layer.cpp:63] Loading filename from /share/project/shapes/caffe-weighted-samples/examples/singleNet/trainFileList.txt
+I0225 13:50:58.677191 27751 hdf5_data_layer.cpp:75] Number of files: 3
+I0225 13:50:58.677220 27751 hdf5_data_layer.cpp:29] Loading HDF5 file#/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_1_35x35.h5
+E0225 13:50:58.678839 27751 hdf5_data_layer.cpp:32] Failed opening HDF5 file#/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_1_35x35.h5
+I0225 13:50:58.686522 27751 hdf5_data_layer.cpp:89] output data size: 100,0,0,0
+I0225 13:50:58.686566 27751 net.cpp:103] Top shape: 100 0 0 0 (0)
+I0225 13:50:58.686575 27751 net.cpp:103] Top shape: 100 0 0 0 (0)
+I0225 13:50:58.686583 27751 net.cpp:103] Top shape: 100 0 0 0 (0)
+I0225 13:50:58.686602 27751 net.cpp:67] Creating Layer conv1
+I0225 13:50:58.686611 27751 net.cpp:394] conv1 <- data
+I0225 13:50:58.686633 27751 net.cpp:356] conv1 -> conv1
+I0225 13:50:58.686645 27751 net.cpp:96] Setting up conv1
+F0225 13:50:58.686676 27751 filler.hpp:150] Check failed: blob->count() 

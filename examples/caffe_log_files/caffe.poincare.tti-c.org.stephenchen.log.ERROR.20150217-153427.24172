@@ -1,0 +1,4 @@
+Log file created at: 2015/02/17 15:34:27
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0217 15:34:27.966251 24172 insert_splits.cpp:35] Unknown blob input sample_weight to layer 2

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="examples">
+          <df name="cifar10">
+          </df>
+          <df name="mnist">
+          </df>
+          <df name="siamese">
+          </df>
+        </df>
+        <df name="lib">
+        </df>
+        <df name="src">
+          <df name="caffe">
+            <df name="layers">
+            </df>
+            <df name="proto">
+              <in>caffe.pb.cc</in>
+              <in>caffe.pb.h</in>
+              <in>caffe_pretty_print.pb.cc</in>
+              <in>caffe_pretty_print.pb.h</in>
+            </df>
+            <df name="util">
+            </df>
+          </df>
+        </df>
+        <df name="tools">
+        </df>
+      </df>
+      <df name="CMakeFiles">
+        <df name="3.0.2">
+          <df name="CompilerIdC">
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+        </df>
+        <df name="CMakeTmp">
+        </df>
+      </df>
+      <df name="CMakeScripts">
+      </df>
+      <df name="data">
+        <df name="cifar10">
+        </df>
+        <df name="ilsvrc12">
+        </df>
+        <df name="mnist">
+        </df>
+      </df>
+      <df name="docs">
+        <df name="_layouts">
+        </df>
+        <df name="images">
+        </df>
+        <df name="stylesheets">
+        </df>
+        <df name="tutorial">
+          <df name="fig">
+          </df>
+        </df>
+      </df>
+      <df name="examples">
+        <df name="caffe_log_files">
+        </df>
+        <df name="cifar10">
+          <in>convert_cifar_data.cpp</in>
+        </df>
+        <df name="feature_extraction">
+        </df>
+        <df name="finetune_flickr_style">
+        </df>
+        <df name="finetune_pascal_detection">
+        </df>
+        <df name="hdf5_classification">
+        </df>
+        <df name="imagenet">
+        </df>
+        <df name="images">
+        </df>
+        <df name="mnist">
+          <in>convert_mnist_data.cpp</in>
+        </df>
+        <df name="siamese">
+          <in>convert_mnist_siamese_data.cpp</in>
+        </df>
+        <df name="singleNet">
+          <df name="backup">
+          </df>
+          <df name="data">
+            <df name="old">
+            </df>
+          </df>
+          <df name="output">
+          </df>
+        </df>
+        <df name="web_demo">
+          <df name="templates">
+          </df>
+        </df>
+      </df>
+      <df name="include">
+        <df name="caffe">
+          <df name="test">
+            <in>test_caffe_main.hpp</in>
+            <in>test_gradient_check_util.hpp</in>
+          </df>
+          <df name="util">
+            <in>benchmark.hpp</in>
+            <in>cudnn.hpp</in>
+            <in>device_alternate.hpp</in>
+            <in>im2col.hpp</in>
+            <in>insert_splits.hpp</in>
+            <in>io.hpp</in>
+            <in>math_functions.hpp</in>
+            <in>mkl_alternate.hpp</in>
+            <in>rng.hpp</in>
+            <in>thread.hpp</in>
+            <in>upgrade_proto.hpp</in>
+          </df>
+          <in>blob.hpp</in>
+          <in>caffe.hpp</in>
+          <in>common.hpp</in>
+          <in>common_layers.hpp</in>
+          <in>data_layers.hpp</in>
+          <in>data_transformer.hpp</in>
+          <in>filler.hpp</in>
+          <in>internal_thread.hpp</in>
+          <in>layer.hpp</in>
+          <in>loss_layers.hpp</in>
+          <in>net.hpp</in>
+          <in>neuron_layers.hpp</in>
+          <in>solver.hpp</in>
+          <in>syncedmem.hpp</in>
+          <in>vision_layers.hpp</in>
+        </df>
+      </df>
+      <df name="matlab">
+        <df name="caffe">
+          <in>matcaffe.cpp</in>
+          <in>matcaffe_batch.m</in>
+          <in>matcaffe_demo.m</in>
+          <in>matcaffe_init.m</in>
+          <in>prepare_batch.m</in>
+          <in>print_cell.m</in>
+          <in>read_cell.m</in>
+        </df>
+      </df>
+      <df name="models">
+        <df name="bvlc_alexnet">
+        </df>
+        <df name="bvlc_reference_caffenet">
+        </df>
+        <df name="bvlc_reference_rcnn_ilsvrc13">
+        </df>
+        <df name="finetune_flickr_style">
+        </df>
+      </df>
+      <df name="python">
+        <df name="caffe">
+          <df name="imagenet">
+          </df>
+          <in>_caffe.cpp</in>
+          <in>_caffe.hpp</in>
+        </df>
+      </df>
+      <df name="scripts">
+        <df name="travis">
+        </df>
+      </df>
+      <df name="src">
+        <df name="caffe">
+          <df name="CMakeFiles">
+          </df>
+          <df name="layers">
+            <in>absval_layer.cpp</in>
+            <in>accuracy_layer.cpp</in>
+            <in>argmax_layer.cpp</in>
+            <in>base_data_layer.cpp</in>
+            <in>bnll_layer.cpp</in>
+            <in>concat_layer.cpp</in>
+            <in>contrastive_loss_layer.cpp</in>
+            <in>conv_layer.cpp</in>
+            <in>cudnn_conv_layer.cpp</in>
+            <in>cudnn_pooling_layer.cpp</in>
+            <in>cudnn_relu_layer.cpp</in>
+            <in>cudnn_sigmoid_layer.cpp</in>
+            <in>cudnn_softmax_layer.cpp</in>
+            <in>cudnn_tanh_layer.cpp</in>
+            <in>data_layer.cpp</in>
+            <in>dropout_layer.cpp</in>
+            <in>dummy_data_layer.cpp</in>
+            <in>eltwise_layer.cpp</in>
+            <in>euclidean_loss_layer.cpp</in>
+            <in>flatten_layer.cpp</in>
+            <in>hdf5_data_layer.cpp</in>
+            <in>hdf5_output_layer.cpp</in>
+            <in>hinge_loss_layer.cpp</in>
+            <in>im2col_layer.cpp</in>
+            <in>image_data_layer.cpp</in>
+            <in>infogain_loss_layer.cpp</in>
+            <in>inner_product_layer.cpp</in>
+            <in>loss_layer.cpp</in>
+            <in>lrn_layer.cpp</in>
+            <in>memory_data_layer.cpp</in>
+            <in>multinomial_logistic_loss_layer.cpp</in>
+            <in>mvn_layer.cpp</in>
+            <in>neuron_layer.cpp</in>
+            <in>pooling_layer.cpp</in>
+            <in>power_layer.cpp</in>
+            <in>relu_layer.cpp</in>
+            <in>sigmoid_cross_entropy_loss_layer.cpp</in>
+            <in>sigmoid_layer.cpp</in>
+            <in>silence_layer.cpp</in>
+            <in>slice_layer.cpp</in>
+            <in>softmax_cross_entropy_loss.cpp</in>
+            <in>softmax_layer.cpp</in>
+            <in>softmax_loss_layer.cpp</in>
+            <in>split_layer.cpp</in>
+            <in>tanh_layer.cpp</in>
+            <in>threshold_layer.cpp</in>
+            <in>window_data_layer.cpp</in>
+          </df>
+          <df name="proto">
+          </df>
+          <df name="test">
+            <df name="test_data">
+            </df>
+            <in>test_accuracy_layer.cpp</in>
+            <in>test_argmax_layer.cpp</in>
+            <in>test_benchmark.cpp</in>
+            <in>test_blob.cpp</in>
+            <in>test_caffe_main.cpp</in>
+            <in>test_common.cpp</in>
+            <in>test_concat_layer.cpp</in>
+            <in>test_contrastive_loss_layer.cpp</in>
+            <in>test_convolution_layer.cpp</in>
+            <in>test_data_layer.cpp</in>
+            <in>test_dummy_data_layer.cpp</in>
+            <in>test_eltwise_layer.cpp</in>
+            <in>test_euclidean_loss_layer.cpp</in>
+            <in>test_filler.cpp</in>
+            <in>test_flatten_layer.cpp</in>
+            <in>test_gradient_based_solver.cpp</in>
+            <in>test_hdf5_output_layer.cpp</in>
+            <in>test_hdf5data_layer.cpp</in>
+            <in>test_hinge_loss_layer.cpp</in>
+            <in>test_im2col_layer.cpp</in>
+            <in>test_image_data_layer.cpp</in>
+            <in>test_infogain_loss_layer.cpp</in>
+            <in>test_inner_product_layer.cpp</in>
+            <in>test_internal_thread.cpp</in>
+            <in>test_lrn_layer.cpp</in>
+            <in>test_math_functions.cpp</in>
+            <in>test_maxpool_dropout_layers.cpp</in>
+            <in>test_memory_data_layer.cpp</in>
+            <in>test_multinomial_logistic_loss_layer.cpp</in>
+            <in>test_mvn_layer.cpp</in>
+            <in>test_net.cpp</in>
+            <in>test_neuron_layer.cpp</in>
+            <in>test_platform.cpp</in>
+            <in>test_pooling_layer.cpp</in>
+            <in>test_power_layer.cpp</in>
+            <in>test_protobuf.cpp</in>
+            <in>test_random_number_generator.cpp</in>
+            <in>test_sigmoid_cross_entropy_loss_layer.cpp</in>
+            <in>test_slice_layer.cpp</in>
+            <in>test_softmax_layer.cpp</in>
+            <in>test_softmax_with_loss_layer.cpp</in>
+            <in>test_solver.cpp</in>
+            <in>test_split_layer.cpp</in>
+            <in>test_stochastic_pooling.cpp</in>
+            <in>test_syncedmem.cpp</in>
+            <in>test_threshold_layer.cpp</in>
+            <in>test_upgrade_proto.cpp</in>
+            <in>test_util_blas.cpp</in>
+          </df>
+          <df name="util">
+            <in>benchmark.cpp</in>
+            <in>im2col.cpp</in>
+            <in>insert_splits.cpp</in>
+            <in>io.cpp</in>
+            <in>math_functions.cpp</in>
+            <in>upgrade_proto.cpp</in>
+          </df>
+          <in>blob.cpp</in>
+          <in>common.cpp</in>
+          <in>data_transformer.cpp</in>
+          <in>internal_thread.cpp</in>
+          <in>layer_factory.cpp</in>
+          <in>net.cpp</in>
+          <in>solver.cpp</in>
+          <in>syncedmem.cpp</in>
+        </df>
+        <df name="gtest">
+          <df name="CMakeFiles">
+          </df>
+          <in>gtest-all.cpp</in>
+          <in>gtest.h</in>
+          <in>gtest_main.cc</in>
+        </df>
+      </df>
+      <df name="tools">
+        <df name="extra">
+        </df>
+        <in>caffe.cpp</in>
+        <in>compute_image_mean.cpp</in>
+        <in>convert_imageset.cpp</in>
+        <in>device_query.cpp</in>
+        <in>dump_network.cpp</in>
+        <in>extract_features.cpp</in>
+        <in>finetune_net.cpp</in>
+        <in>net_speed_benchmark.cpp</in>
+        <in>test_net.cpp</in>
+        <in>train_net.cpp</in>
+        <in>upgrade_net_proto_binary.cpp</in>
+        <in>upgrade_net_proto_text.cpp</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

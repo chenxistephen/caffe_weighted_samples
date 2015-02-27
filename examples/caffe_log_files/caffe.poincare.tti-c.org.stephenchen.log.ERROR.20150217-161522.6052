@@ -1,0 +1,4 @@
+Log file created at: 2015/02/17 16:15:22
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0217 16:15:22.287516  6052 blob.cpp:78] Check failed: data_ 

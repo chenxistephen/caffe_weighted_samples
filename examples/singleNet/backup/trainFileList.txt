@@ -1,0 +1,11 @@
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_1_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_2_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_3_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_4_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_5_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_6_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_7_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_8_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_9_35x35.h5
+/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_10_35x35.h5
+

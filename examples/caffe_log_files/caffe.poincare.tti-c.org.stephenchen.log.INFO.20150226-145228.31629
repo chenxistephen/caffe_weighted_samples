@@ -1,0 +1,4 @@
+Log file created at: 2015/02/26 14:52:28
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0226 14:52:28.041529 31629 caffe.cpp:99] Use GPU with device ID 0

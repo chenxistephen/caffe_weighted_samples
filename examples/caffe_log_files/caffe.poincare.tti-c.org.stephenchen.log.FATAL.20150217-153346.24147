@@ -1,0 +1,4 @@
+Log file created at: 2015/02/17 15:33:46
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0217 15:33:46.527611 24147 layer.hpp:347] Check failed: ExactNumBottomBlobs() == bottom.size() (1 vs. 2) HDF5_OUTPUT Layer takes 1 bottom blob(s) as input.

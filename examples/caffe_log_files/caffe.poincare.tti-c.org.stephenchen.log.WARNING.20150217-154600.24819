@@ -1,0 +1,4 @@
+Log file created at: 2015/02/17 15:46:00
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0217 15:46:00.903337 24819 hdf5_output_layer.cu:17] Check failed: bottom.size() >= 2 (1 vs. 2) 

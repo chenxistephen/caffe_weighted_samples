@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="build">
+        <df name="src">
+          <df name="caffe">
+            <df name="proto">
+              <in>caffe.pb.cc</in>
+              <in>caffe_pretty_print.pb.cc</in>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="examples">
+        <df name="cifar10">
+          <in>convert_cifar_data.cpp</in>
+        </df>
+        <df name="mnist">
+          <in>convert_mnist_data.cpp</in>
+        </df>
+        <df name="siamese">
+          <in>convert_mnist_siamese_data.cpp</in>
+        </df>
+      </df>
+      <df name="matlab">
+        <df name="caffe">
+          <in>matcaffe.cpp</in>
+          <in>matcaffe_batch.m</in>
+          <in>matcaffe_demo.m</in>
+          <in>matcaffe_init.m</in>
+          <in>prepare_batch.m</in>
+          <in>print_cell.m</in>
+          <in>read_cell.m</in>
+        </df>
+      </df>
+      <df name="python">
+        <df name="caffe">
+          <in>_caffe.cpp</in>
+        </df>
+      </df>
+      <df name="src">
+        <df name="caffe">
+          <df name="layers">
+            <in>absval_layer.cpp</in>
+            <in>accuracy_layer.cpp</in>
+            <in>argmax_layer.cpp</in>
+            <in>base_data_layer.cpp</in>
+            <in>bnll_layer.cpp</in>
+            <in>concat_layer.cpp</in>
+            <in>contrastive_loss_layer.cpp</in>
+            <in>conv_layer.cpp</in>
+            <in>cudnn_conv_layer.cpp</in>
+            <in>cudnn_pooling_layer.cpp</in>
+            <in>cudnn_relu_layer.cpp</in>
+            <in>cudnn_sigmoid_layer.cpp</in>
+            <in>cudnn_softmax_layer.cpp</in>
+            <in>cudnn_tanh_layer.cpp</in>
+            <in>data_layer.cpp</in>
+            <in>dropout_layer.cpp</in>
+            <in>dummy_data_layer.cpp</in>
+            <in>eltwise_layer.cpp</in>
+            <in>euclidean_loss_layer.cpp</in>
+            <in>flatten_layer.cpp</in>
+            <in>hdf5_data_layer.cpp</in>
+            <in>hdf5_output_layer.cpp</in>
+            <in>hinge_loss_layer.cpp</in>
+            <in>im2col_layer.cpp</in>
+            <in>image_data_layer.cpp</in>
+            <in>infogain_loss_layer.cpp</in>
+            <in>inner_product_layer.cpp</in>
+            <in>loss_layer.cpp</in>
+            <in>lrn_layer.cpp</in>
+            <in>memory_data_layer.cpp</in>
+            <in>multinomial_logistic_loss_layer.cpp</in>
+            <in>mvn_layer.cpp</in>
+            <in>neuron_layer.cpp</in>
+            <in>pooling_layer.cpp</in>
+            <in>power_layer.cpp</in>
+            <in>relu_layer.cpp</in>
+            <in>sigmoid_cross_entropy_loss_layer.cpp</in>
+            <in>sigmoid_layer.cpp</in>
+            <in>silence_layer.cpp</in>
+            <in>slice_layer.cpp</in>
+            <in>softmax_cross_entropy_loss.cpp</in>
+            <in>softmax_layer.cpp</in>
+            <in>softmax_loss_layer.cpp</in>
+            <in>split_layer.cpp</in>
+            <in>tanh_layer.cpp</in>
+            <in>threshold_layer.cpp</in>
+            <in>window_data_layer.cpp</in>
+          </df>
+          <df name="test">
+            <in>test_accuracy_layer.cpp</in>
+            <in>test_argmax_layer.cpp</in>
+            <in>test_benchmark.cpp</in>
+            <in>test_blob.cpp</in>
+            <in>test_caffe_main.cpp</in>
+            <in>test_common.cpp</in>
+            <in>test_concat_layer.cpp</in>
+            <in>test_contrastive_loss_layer.cpp</in>
+            <in>test_convolution_layer.cpp</in>
+            <in>test_data_layer.cpp</in>
+            <in>test_dummy_data_layer.cpp</in>
+            <in>test_eltwise_layer.cpp</in>
+            <in>test_euclidean_loss_layer.cpp</in>
+            <in>test_filler.cpp</in>
+            <in>test_flatten_layer.cpp</in>
+            <in>test_gradient_based_solver.cpp</in>
+            <in>test_hdf5_output_layer.cpp</in>
+            <in>test_hdf5data_layer.cpp</in>
+            <in>test_hinge_loss_layer.cpp</in>
+            <in>test_im2col_layer.cpp</in>
+            <in>test_image_data_layer.cpp</in>
+            <in>test_infogain_loss_layer.cpp</in>
+            <in>test_inner_product_layer.cpp</in>
+            <in>test_internal_thread.cpp</in>
+            <in>test_lrn_layer.cpp</in>
+            <in>test_math_functions.cpp</in>
+            <in>test_maxpool_dropout_layers.cpp</in>
+            <in>test_memory_data_layer.cpp</in>
+            <in>test_multinomial_logistic_loss_layer.cpp</in>
+            <in>test_mvn_layer.cpp</in>
+            <in>test_net.cpp</in>
+            <in>test_neuron_layer.cpp</in>
+            <in>test_platform.cpp</in>
+            <in>test_pooling_layer.cpp</in>
+            <in>test_power_layer.cpp</in>
+            <in>test_protobuf.cpp</in>
+            <in>test_random_number_generator.cpp</in>
+            <in>test_sigmoid_cross_entropy_loss_layer.cpp</in>
+            <in>test_slice_layer.cpp</in>
+            <in>test_softmax_layer.cpp</in>
+            <in>test_softmax_with_loss_layer.cpp</in>
+            <in>test_solver.cpp</in>
+            <in>test_split_layer.cpp</in>
+            <in>test_stochastic_pooling.cpp</in>
+            <in>test_syncedmem.cpp</in>
+            <in>test_threshold_layer.cpp</in>
+            <in>test_upgrade_proto.cpp</in>
+            <in>test_util_blas.cpp</in>
+          </df>
+          <df name="util">
+            <in>benchmark.cpp</in>
+            <in>im2col.cpp</in>
+            <in>insert_splits.cpp</in>
+            <in>io.cpp</in>
+            <in>math_functions.cpp</in>
+            <in>upgrade_proto.cpp</in>
+          </df>
+          <in>blob.cpp</in>
+          <in>common.cpp</in>
+          <in>data_transformer.cpp</in>
+          <in>internal_thread.cpp</in>
+          <in>layer_factory.cpp</in>
+          <in>net.cpp</in>
+          <in>solver.cpp</in>
+          <in>syncedmem.cpp</in>
+        </df>
+        <df name="gtest">
+          <in>gtest-all.cpp</in>
+          <in>gtest_main.cc</in>
+        </df>
+      </df>
+      <df name="tools">
+        <in>caffe.cpp</in>
+        <in>compute_image_mean.cpp</in>
+        <in>convert_imageset.cpp</in>
+        <in>device_query.cpp</in>
+        <in>dump_network.cpp</in>
+        <in>extract_features.cpp</in>
+        <in>finetune_net.cpp</in>
+        <in>net_speed_benchmark.cpp</in>
+        <in>test_net.cpp</in>
+        <in>train_net.cpp</in>
+        <in>upgrade_net_proto_binary.cpp</in>
+        <in>upgrade_net_proto_text.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="build/src/caffe/proto/caffe.pb.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="build/src/caffe/proto/caffe_pretty_print.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="examples/cifar10/convert_cifar_data.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="examples/mnist/convert_mnist_data.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="examples/siamese/convert_mnist_siamese_data.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="matlab/caffe/matcaffe.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="matlab/caffe/matcaffe_batch.m" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="matlab/caffe/matcaffe_demo.m" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="matlab/caffe/matcaffe_init.m" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="matlab/caffe/prepare_batch.m" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="matlab/caffe/print_cell.m" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="matlab/caffe/read_cell.m" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="python/caffe/_caffe.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/blob.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/common.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/data_transformer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/internal_thread.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layer_factory.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/absval_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/accuracy_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/argmax_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/base_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/bnll_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/concat_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/contrastive_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/conv_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/cudnn_conv_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/cudnn_pooling_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/cudnn_relu_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/cudnn_sigmoid_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/cudnn_softmax_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/cudnn_tanh_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/data_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/dropout_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/dummy_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/eltwise_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/euclidean_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/flatten_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/hdf5_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/hdf5_output_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/hinge_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/im2col_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/image_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/infogain_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/inner_product_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/loss_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/lrn_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/memory_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/multinomial_logistic_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/mvn_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/neuron_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/pooling_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/power_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/relu_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/sigmoid_cross_entropy_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/sigmoid_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/silence_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/slice_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/softmax_cross_entropy_loss.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/softmax_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/softmax_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/split_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/tanh_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/layers/threshold_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/layers/window_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/net.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/solver.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/syncedmem.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_accuracy_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_argmax_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_benchmark.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_blob.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_caffe_main.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_common.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_concat_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_contrastive_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_convolution_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_data_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_dummy_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_eltwise_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_euclidean_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_filler.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_flatten_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_gradient_based_solver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_hdf5_output_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_hdf5data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_hinge_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_im2col_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_image_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_infogain_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_inner_product_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_internal_thread.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_lrn_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_math_functions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_maxpool_dropout_layers.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_memory_data_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_multinomial_logistic_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_mvn_layer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_net.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_neuron_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_platform.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_pooling_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_power_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_protobuf.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_random_number_generator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_sigmoid_cross_entropy_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_slice_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_softmax_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_softmax_with_loss_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_solver.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_split_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_stochastic_pooling.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_syncedmem.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_threshold_layer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_upgrade_proto.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="src/caffe/test/test_util_blas.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/util/benchmark.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/util/im2col.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/util/insert_splits.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/util/io.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/util/math_functions.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/caffe/util/upgrade_proto.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/gtest/gtest-all.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="src/gtest/gtest_main.cc" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/caffe.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/compute_image_mean.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/convert_imageset.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/device_query.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/dump_network.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/extract_features.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/finetune_net.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/net_speed_benchmark.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/test_net.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/train_net.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/upgrade_net_proto_binary.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="tools/upgrade_net_proto_text.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

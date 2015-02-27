@@ -1,0 +1,4 @@
+Log file created at: 2015/02/17 15:42:53
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0217 15:42:53.025795 24522 net.cpp:713] Check failed: target_blobs[j]->height() == source_layer.blobs(j).height() (4 vs. 5) 

@@ -1,0 +1,5 @@
+Log file created at: 2015/02/25 13:50:58
+Running on machine: poincare.tti-c.org
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0225 13:50:58.678839 27751 hdf5_data_layer.cpp:32] Failed opening HDF5 file#/scratch/stephenchen/shapes/singleNet/hdf5/train_batch_35x35/trainHDF_1_35x35.h5
+F0225 13:50:58.686676 27751 filler.hpp:150] Check failed: blob->count() 
